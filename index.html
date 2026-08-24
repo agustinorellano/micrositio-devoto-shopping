@@ -22,7 +22,7 @@
   --max:1100px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;overflow-x:hidden;max-width:100vw;}
 body{
   font-family:'Helvetica Neue', Arial, sans-serif;
   background:var(--teal-800);
@@ -533,7 +533,7 @@ footer .fsocial svg{width:17px;height:17px;}
   .nav .wrap{height:60px;}
   .nav-logo{font-size:12px;}
   .nav-logo svg{width:24px;height:24px;}
-  .nav-cta{font-size:12px;padding:8px 14px;white-space:nowrap;}
+  .nav-cta{font-size:11px;padding:7px 12px;white-space:nowrap;}
   .hero{padding:56px 0 64px;}
   .hero-grid{
     grid-template-columns:1fr;gap:28px;
@@ -557,8 +557,15 @@ footer .fsocial svg{width:17px;height:17px;}
   .section-lead{font-size:15px;}
   .cards3{grid-template-columns:1fr;}
   .join-box{grid-template-columns:1fr;padding:22px;}
-  .flow{flex-direction:column;align-items:stretch;}
-  .flow-arrow{transform:rotate(90deg);align-self:center;}
+  .flow{flex-direction:column;align-items:stretch;gap:10px;margin-top:32px;}
+  .flow-step{padding:16px 18px;}
+  .flow-step .ico{width:38px;height:38px;border-radius:10px;margin-bottom:10px;}
+  .flow-step .ico svg{width:20px;height:20px;}
+  .flow-step p{font-size:14.5px;}
+  .flow-arrow{transform:rotate(90deg);align-self:center;font-size:18px;}
+  .mini-card{padding:18px 16px;}
+  .mini-card .ico{width:32px;height:32px;margin-bottom:10px;}
+  .mini-card .ico svg{width:16px;height:16px;}
   .closing h2{font-size:26px;}
   .closing{padding:70px 0;}
   section{padding:56px 0;}
