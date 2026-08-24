@@ -151,8 +151,20 @@ a{color:inherit;text-decoration:none;}
 .hero-text{grid-area:text;}
 .hero-cta{grid-area:cta;}
 .phone-wrap{grid-area:phone;}
-.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:28px;}
-.eyebrow svg{width:150px;height:auto;}
+.eyebrow{display:flex;flex-direction:column;gap:14px;margin-bottom:28px;}
+.eyebrow-logo{display:flex;align-items:center;gap:12px;}
+.eyebrow-logo svg{width:36px;height:36px;flex:none;}
+.eyebrow-word{
+  font-weight:800;font-size:22px;line-height:1.05;letter-spacing:0.2px;
+  color:#fff;
+}
+.eyebrow-tagline{
+  font-size:15px;color:var(--ink);
+}
+.eyebrow-tagline b{
+  font-weight:800;color:var(--mint);
+}
+.eyebrow-tagline b span{font-weight:800;}
 .hero h1{
   font-size:56px;font-weight:800;line-height:1.08;letter-spacing:-1px;
   margin-bottom:22px;
@@ -561,6 +573,8 @@ footer{
 }
 footer .flogo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:0.5px;}
 footer .flogo svg{width:26px;height:26px;}
+footer .ftagline{font-size:12.5px;color:rgba(255,255,255,0.5);margin-top:4px;}
+footer .ftagline b{color:var(--mint);font-weight:700;}
 footer .fnote{color:rgba(255,255,255,0.45);font-size:13px;}
 footer .fsocial{display:flex;align-items:center;gap:14px;}
 footer .fsocial a{
@@ -592,7 +606,7 @@ footer .fsocial svg{width:17px;height:17px;}
     grid-template-areas:"text" "phone" "cta";
   }
   .eyebrow{margin-bottom:18px;}
-  .eyebrow svg{width:120px;}
+  .eyebrow-logo svg{width:28px;height:28px;} .eyebrow-word{font-size:17px;} .eyebrow-tagline{font-size:13px;}
   .phone-wrap{margin:0 auto;}
   .hero-mockup{width:260px;}
   .phone-blob{width:230px;height:230px;}
@@ -635,7 +649,7 @@ footer .fsocial svg{width:17px;height:17px;}
   .hero h1{font-size:26px;}
   .hero-mockup{width:220px;}
   .phone-blob{width:190px;height:190px;}
-  .eyebrow svg{width:100px;}
+  .eyebrow-logo svg{width:24px;height:24px;} .eyebrow-word{font-size:15px;}
   .wa-icon-btn,.email-icon-btn{width:56px;height:56px;}
   .wa-icon-btn svg{width:26px;height:26px;}
   .email-icon-btn svg{width:24px;height:24px;}
@@ -696,10 +710,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap hero-grid">
     <div class="hero-text">
       <div class="eyebrow">
-        <svg viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="34" fill="#ffffff" letter-spacing="0.5">DEVOTO</text>
-          <text x="0" y="74" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="34" fill="#ffffff" letter-spacing="0.5">SHOPPING</text>
-        </svg>
+        <div class="eyebrow-logo">
+          <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 12,96 C 30,96 38,78 52,64 C 66,50 74,42 96,38" stroke="#ffffff" stroke-width="16" stroke-linecap="round" fill="none"/>
+            <path d="M 12,126 C 30,126 38,108 52,94 C 66,80 74,72 96,68" stroke="#ffffff" stroke-width="16" stroke-linecap="round" fill="none"/>
+          </svg>
+          <div class="eyebrow-word">DEVOTO<br>SHOPPING</div>
+        </div>
+        <p class="eyebrow-tagline">Tu vitrina digital en <b>clash<span>.</span></b></p>
       </div>
       <h1>Hacé que tus promociones lleguen más lejos.</h1>
       <p class="lead"><b>Clash Beneficios</b> es el nuevo canal digital de Devoto Shopping: la herramienta para que tu comercio gestione y comunique sus propios beneficios, promociones y descuentos.</p>
@@ -1047,8 +1065,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-    <div class="flogo">
-      DEVOTO SHOPPING
+    <div>
+      <div class="flogo">DEVOTO SHOPPING</div>
+      <p class="ftagline">Tu vitrina digital en <b>clash<span>.</span></b></p>
     </div>
     <div class="fsocial">
       <a href="https://clash.com.ar/inicio/comercio" target="_blank" rel="noopener" aria-label="Sitio web de Clash">
